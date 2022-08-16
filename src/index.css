@@ -31,6 +31,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
   text-fill-color: transparent;
 }
 
@@ -83,6 +84,39 @@
 .sidebar {
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.roundBox {
+  animation: roll-on 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes roll-on {
+  0% {
+    -webkit-transform: translateY(-700px);
+    transform: translateY(-700px);
+  }
+  50% {
+    -webkit-transform: translateY(300px);
+    transform: translateY(300px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes roll-on {
+  0% {
+    -webkit-transform: translateY(-700px);
+    transform: translateY(-700px);
+  }
+  50% {
+    -webkit-transform: translateY(300px);
+    transform: translateY(300px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 @-webkit-keyframes slide-top {
